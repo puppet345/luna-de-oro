@@ -1,0 +1,700 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos generales */
+  body {
+    font-family: 'Georgia', serif;
+    color: #333;
+    background-color: #ffffff;
+  }
+  
+  h1, h2, h3, p {
+    margin-bottom: 1rem;
+  }
+  
+  /* Encabezado fijo */
+  .encabezado {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    color: #bfa046; /* Dorado metálico */
+    padding: 1rem 5%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+ /* HERO SECTION */
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url('logo-luna.jpg'); /* Ruta al logo */
+  background-size: contain; /* Evita deformar el logo */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff; /* Por si no carga el logo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.85); /* Capa blanca translúcida */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-contenido h2 {
+  font-size: 2.8rem;
+  color: #bfa046; /* Dorado metálico */
+  margin-bottom: 1rem;
+}
+
+.hero-contenido p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+  .subtitulo {
+    font-size: 1.2rem;
+    color: #888;
+  }
+  
+  .navegacion ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+  }
+  
+  .navegacion ul li {
+    margin-left: 2rem;
+  }
+  
+  .navegacion ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #bfa046;
+    transition: color 0.3s ease;
+  }
+  
+  .navegacion ul li a:hover {
+    color: #333;
+  }
+  
+  .eslogan {
+    font-style: italic;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    color: #bfa046;
+  }
+  
+  /* Sección principal - Hero */
+  .hero {
+    background-image: url('ruta-de-tu-imagen.jpg'); /* Reemplazar con la URL de la imagen */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .hero-contenido h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  .hero-contenido p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Sección Sobre Nosotros */
+.sobre-nosotros {
+    padding: 5rem 10%;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+  
+  .sobre-nosotros h2 {
+    font-size: 2.5rem;
+    color: #bfa046; /* Dorado metálico */
+    margin-bottom: 1.5rem;
+  }
+  
+  .sobre-nosotros p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  .imagenes-sobre-nosotros {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .imagenes-sobre-nosotros img {
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .imagenes-sobre-nosotros img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+
+  
+  /* Sección Habitaciones */
+.habitaciones {
+    padding: 5rem 10%;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .habitaciones h2 {
+    font-size: 2.5rem;
+    color: #bfa046; /* Dorado metálico */
+    margin-bottom: 1.5rem;
+  }
+  
+  .habitaciones p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+  }
+  
+  .habitaciones-lista {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .habitacion {
+    width: 30%;
+    text-align: center;
+  }
+  
+  .habitacion img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .habitacion img:hover {
+    transform: scale(1.05);
+  }
+  
+  .habitacion h3 {
+    font-size: 1.5rem;
+    color: #bfa046; /* Dorado metálico */
+    margin-top: 1rem;
+  }
+  
+  .habitacion p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 0.5rem;
+  }
+
+  
+  /* Sección Servicios */
+.servicios {
+    padding: 5rem 10%;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+  
+  .servicios h2 {
+    font-size: 2.5rem;
+    color: #bfa046; /* Dorado metálico */
+    margin-bottom: 1.5rem;
+  }
+  
+  .servicios p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+  }
+  
+  .servicios-lista {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  
+  .servicio {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .servicio img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 1rem;
+  }
+  
+  .servicio h3 {
+    font-size: 1.5rem;
+    color: #bfa046; /* Dorado metálico */
+    margin-bottom: 1rem;
+  }
+  
+  .servicio p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .servicio:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .servicios-lista {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .servicios-lista {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  
+  /* Sección Galería */
+.galeria {
+    padding: 5rem 10%;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .galeria h2 {
+    font-size: 2.5rem;
+    color: #bfa046; /* Dorado metálico */
+    margin-bottom: 1rem;
+  }
+  
+  .galeria p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 3rem;
+  }
+  
+  .galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .galeria-grid img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    height: 200px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .galeria-grid img:hover {
+    transform: scale(1.05);
+  }
+
+  
+  /* Sección Contacto */
+.contacto {
+    padding: 5rem 10%;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+  
+  .contacto h2 {
+    font-size: 2.5rem;
+    color: #bfa046;
+    margin-bottom: 1rem;
+  }
+  
+  .contacto p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 3rem;
+  }
+  
+  .contacto-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    text-align: left;
+  }
+  
+  .formulario-contacto {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .formulario-contacto input,
+  .formulario-contacto textarea {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .formulario-contacto button {
+    padding: 1rem;
+    background-color: #bfa046;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .formulario-contacto button:hover {
+    background-color: #a68d39;
+  }
+  
+  .info-contacto {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .info-contacto h3 {
+    color: #bfa046;
+    margin-bottom: 1rem;
+  }
+  
+  .info-contacto p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.8rem;
+  }
+  
+  @media (max-width: 768px) {
+    .contacto-grid {
+      flex-direction: column;
+    }
+  }
+  
+  
+  /* Estilos de pie de página */
+  .footer {
+    background-color: #bfa046;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .hero {
+  position: relative;
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Para que nada se desborde */
+}
+
+.hero-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* o 'cover' si quieres que se estire */
+  opacity: 0.15; /* Para que no opaque el texto, puedes ajustar */
+  z-index: 0;
+}
+
+.hero-contenido {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-contenido h2 {
+  font-size: 2.8rem;
+  color: #bfa046;
+  margin-bottom: 1rem;
+}
+
+.hero-contenido p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.testimonios {
+  padding: 4rem 2rem;
+  background-color: #fdf9f0; /* Blanco con toque dorado suave */
+  text-align: center;
+}
+
+.testimonios h2 {
+  font-size: 2.5rem;
+  color: #bfa046; /* Dorado metálico */
+  margin-bottom: 2rem;
+}
+
+.testimonios-contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.testimonio {
+  background-color: #fff;
+  padding: 2rem;
+  border-left: 5px solid #bfa046;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.testimonio p {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.testimonio h4 {
+  font-weight: bold;
+  color: #555;
+  font-size: 1rem;
+}
+
+.porque-elegirnos {
+  background-color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.porque-elegirnos h2 {
+  font-size: 2.5rem;
+  color: #bfa046;
+  margin-bottom: 2.5rem;
+}
+
+.razones-contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.razon {
+  background-color: #fdf9f0;
+  padding: 2rem;
+  border-left: 4px solid #bfa046;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.razon h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.razon p {
+  color: #555;
+  font-size: 1rem;
+}
+
+.faq {
+  background-color: #f7f6f2;
+  padding: 4rem 2rem;
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq h2 {
+  text-align: center;
+  color: #bfa046;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.faq-item {
+  margin-bottom: 2rem;
+  border-left: 4px solid #bfa046;
+  padding-left: 1rem;
+}
+
+.faq-item h3 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.faq-item p {
+  color: #555;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.promociones {
+  background-color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.promociones h2 {
+  font-size: 2.5rem;
+  color: #bfa046;
+  margin-bottom: 2.5rem;
+}
+
+.promo-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.promo {
+  background-color: #fdf9f0;
+  padding: 2rem;
+  border: 2px solid #bfa046;
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.promo h3 {
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.promo p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.promo .precio {
+  display: block;
+  font-weight: bold;
+  color: #bfa046;
+  font-size: 1.2rem;
+}
+
+.reservas {
+  background-color: #f7f6f2;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.reservas h2 {
+  font-size: 2.5rem;
+  color: #bfa046;
+  margin-bottom: 2.5rem;
+}
+
+.formulario-reserva {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  background-color: #fff;
+  padding: 2rem;
+  border: 1px solid #e0dccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.campo {
+  margin-bottom: 1.5rem;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.campo input,
+.campo select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  background-color: #bfa046;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #a38933;
+}
